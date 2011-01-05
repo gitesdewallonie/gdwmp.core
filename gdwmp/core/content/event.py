@@ -6,12 +6,18 @@ from archetypes.schemaextender.interfaces import ISchemaExtender, \
                                                  ISchemaModifier
 from archetypes.schemaextender.field import ExtensionField
 from Products.ATContentTypes.content.event import ATEvent
-from Products.Archetypes.public import BooleanField, BooleanWidget
+from Products.Archetypes.public import BooleanField, StringField, \
+                                       BooleanWidget, StringWidget
 
 from gdwmp.core import GDWMPMessage as _
 
 
 class CompleteField(ExtensionField, BooleanField):
+    """
+    """
+
+
+class PriceField(ExtensionField, StringField):
     """
     """
 
@@ -27,9 +33,17 @@ class EventExtender(object):
             languageIndependent = True,
             default = False,
             widget = BooleanWidget(
-                description = _(u'help_evenement_complet',
+                description = _(u'help_complete_event',
                                 default=u"Cochez la case si l'événement est complet."),
-                label = _(u'evenement_complet', default=u'Complet')))]
+                label = _(u'complete_event', default=u'Complet'))),
+        PriceField(
+            name='price',
+            required = False,
+            languageIndependent = True,
+            widget = StringWidget(
+                description = _(u'help_price',
+                                default=u"Détail du prix de l'événement."),
+                label = _(u'price', default=u'Tarifs')))]
 
     def __init__(self, context):
         self.context = context
