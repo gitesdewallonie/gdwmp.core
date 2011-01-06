@@ -1,0 +1,14 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="gdwmp.core">
+
+  <genericsetup:registerProfile
+      name="default"
+      title="GDW Marmiton/Polochon core"
+      directory="profiles/default"
+      description='Creates content types, folders (gdwmp.core)'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+      
+</configure>

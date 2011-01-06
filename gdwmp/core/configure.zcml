@@ -6,6 +6,7 @@
     i18n_domain="gdwmp.core">
 
   <five:registerPackage package="." initialize=".initialize" />
+  <include package=".browser" />
   <include file="profiles.zcml" />
 
   <include package="archetypes.schemaextender" />
