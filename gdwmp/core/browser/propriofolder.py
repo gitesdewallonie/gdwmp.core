@@ -12,7 +12,7 @@ class ProprioFolder(BrowserView):
     interface = None
     language = ''
 
-    def isProprioFolder(self):
+    def isConfigured(self):
         obj = self.context
         return IProprioFolder.providedBy(obj)
 
@@ -20,10 +20,11 @@ class ProprioFolder(BrowserView):
         obj = self.context
         putils = getToolByName(self, 'plone_utils')
 
-        if not self.isProprioFolder():
+        if not self.isConfigured():
             alsoProvides(obj, IProprioFolder)
             obj.reindexObject()
-            putils.addPortalMessage(u'Configuration du dossier proprio réussie.')
+            putils.addPortalMessage(u"Configuration du dossier proprio réussie. \
+                                      N'oubliez pas de configurer le partage du dossier au propriétaire ...")
             # XXX do folder creation/configuration here
 
         self.request.response.redirect(obj.absolute_url())

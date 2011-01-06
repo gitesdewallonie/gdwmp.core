@@ -2,6 +2,8 @@
 <object name="portal_types" meta_type="Plone Types Tool">
  <property
     name="title">Controls the available content types in your portal</property>
+ <object name="Proprio"
+    meta_type="Factory-based Type Information with dynamic views"/>
  <object name="Recette"
     meta_type="Factory-based Type Information with dynamic views"/>
  <object name="Hebergement"

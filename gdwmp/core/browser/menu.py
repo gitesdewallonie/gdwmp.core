@@ -29,7 +29,7 @@ class MakeProprioFolderMenu(BrowserMenu):
         if mt.checkPermission(ManagePortal, site):
             title = ""
             if not IProprioFolder.providedBy(context):
-                title = "Faire de ce dossier un dossier proprio"
+                title = "Configurer ce dossier proprio"
                 icon = 'add_icon.gif'
                 menu.append({
                     "title": title,
@@ -61,7 +61,8 @@ class MakeProprioFolderMenuItem(BrowserSubMenuItem):
         return self.context.absolute_url()
 
     def available(self):
-        return True
+        # only available in Proprio folders
+        return (self.context.portal_type == 'Proprio')
 
     def disabled(self):
         return False

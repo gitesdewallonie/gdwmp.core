@@ -11,7 +11,7 @@
         class=".menu.MakeProprioFolderMenu"
         />
 
-    <adapter for="Products.ATContentTypes.interface.interfaces.IATContentType *"
+    <adapter for="Products.ATContentTypes.interfaces.IATFolder *"
         name="plone.contentmenu.propriofolder"
         factory=".menu.MakeProprioFolderMenuItem"
         provides="plone.app.contentmenu.interfaces.IContentMenuItem"
@@ -23,6 +23,14 @@
         class=".propriofolder.ProprioFolder"
         attribute="changeStatus"
         permission="cmf.ManagePortal"
+        />
+
+    <browser:page
+        for="*"
+        name="proprio_view"
+        class=".propriofolder.ProprioFolder"
+        permission="zope2.View"
+        template="templates/proprio_folder_view.pt"
         />
 
 </configure>
