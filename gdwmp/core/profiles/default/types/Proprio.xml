@@ -13,9 +13,9 @@
  <property name="global_allow">True</property>
  <property name="filter_content_types">True</property>
  <property name="allowed_content_types">
-    <element value="Recette"/>
+    <element value="Folder"/>
     <element value="Hebergement"/>
-    <element value="Event"/>
+    <element value="Image"/>
  </property>
  <property name="allow_discussion">False</property>
  <property name="default_view">proprio_view</property>

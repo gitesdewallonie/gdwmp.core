@@ -33,4 +33,12 @@
         template="templates/proprio_folder_view.pt"
         />
 
+    <browser:page
+        for="*"
+        name="recette_view"
+        class=".recette.Recette"
+        permission="zope2.View"
+        template="templates/recette_view.pt"
+        />
+
 </configure>

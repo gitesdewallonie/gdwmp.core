@@ -25,6 +25,8 @@ setup(name='gdwmp.core',
       install_requires=[
           'setuptools',
           'archetypes.schemaextender',
+          'python-ldap',
+          'Products.PloneLDAP',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
