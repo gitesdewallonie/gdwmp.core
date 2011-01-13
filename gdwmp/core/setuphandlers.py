@@ -15,6 +15,8 @@ LANGUAGES = ['fr', 'nl']
 
 def install(context):
     portal = context.getSite()
+    if not 'fr' in portal.objectIds():
+        raise Warning("You must first go to .../plone/@@language-setup-folders")
     if not ISite.providedBy(portal):
         enableSite(portal)
     deleteFolder(portal, 'news')
