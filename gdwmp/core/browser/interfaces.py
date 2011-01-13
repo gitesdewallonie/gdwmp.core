@@ -8,11 +8,11 @@ class IProprioFolder(Interface):
     """
 
 
-class IMakeProprioFolderMenuItem(IBrowserSubMenuItem):
+class IConfigureProprioFolderMenuItem(IBrowserSubMenuItem):
     """The menu item for setting a proprio folder
     """
 
 
-class IMakeProprioFolderMenu(IBrowserMenu):
+class IConfigureProprioFolderMenu(IBrowserMenu):
     """Root menu for setting a proprio folder
     """

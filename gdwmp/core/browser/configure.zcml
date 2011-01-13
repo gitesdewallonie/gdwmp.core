@@ -8,18 +8,18 @@
     <browser:menu
         id="plone_contentmenu_propriofolder"
         title="Dossier proprio"
-        class=".menu.MakeProprioFolderMenu"
+        class=".menu.ConfigureProprioFolderMenu"
         />
 
     <adapter for="Products.ATContentTypes.interfaces.IATFolder *"
         name="plone.contentmenu.propriofolder"
-        factory=".menu.MakeProprioFolderMenuItem"
+        factory=".menu.ConfigureProprioFolderMenuItem"
         provides="plone.app.contentmenu.interfaces.IContentMenuItem"
         />
 
     <browser:page
         for="*"
-        name="makeProprioFolder"
+        name="configureProprioFolder"
         class=".propriofolder.ProprioFolder"
         attribute="changeStatus"
         permission="cmf.ManagePortal"
@@ -27,10 +27,18 @@
 
     <browser:page
         for="*"
-        name="proprio_view"
+        name="proprio_folder_view"
         class=".propriofolder.ProprioFolder"
         permission="zope2.View"
         template="templates/proprio_folder_view.pt"
+        />
+
+    <browser:page
+        for="*"
+        name="event_folder_view"
+        class=".eventfolder.EventFolder"
+        permission="zope2.View"
+        template="templates/event_folder_view.pt"
         />
 
     <browser:page

@@ -1,0 +1,13 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:browser="http://namespaces.zope.org/browser"
+           i18n_domain="gdwmp.core">
+
+  <browser:page
+      for="*"
+      name="plone"
+      class=".eventfolder.Folder"
+      permission="zope.Public"
+      allowed_interface="Products.CMFPlone.browser.interfaces.IPlone"
+      />
+
+</configure>

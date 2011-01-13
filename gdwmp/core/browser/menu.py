@@ -10,13 +10,13 @@ from Products.CMFCore.utils import getToolByName
 from Products.CMFCore.interfaces import ISiteRoot
 from Products.CMFCore.permissions import ManagePortal
 
-from gdwmp.core.browser.interfaces import IMakeProprioFolderMenu, \
-                                          IMakeProprioFolderMenuItem, \
+from gdwmp.core.browser.interfaces import IConfigureProprioFolderMenu, \
+                                          IConfigureProprioFolderMenuItem, \
                                           IProprioFolder
 
 
-class MakeProprioFolderMenu(BrowserMenu):
-    implements(IMakeProprioFolderMenu)
+class ConfigureProprioFolderMenu(BrowserMenu):
+    implements(IConfigureProprioFolderMenu)
 
     def getMenuItems(self, context, request):
         """Return menu item entries in a TAL-friendly form."""
@@ -34,18 +34,18 @@ class MakeProprioFolderMenu(BrowserMenu):
                 menu.append({
                     "title": title,
                     "description": u'',
-                    "action": url + "/@@makeProprioFolder",
+                    "action": url + "/@@configureProprioFolder",
                     "selected": False,
                     "icon": icon,
-                    "extra": {"id": "makeProprioFolder",
+                    "extra": {"id": "configureProprioFolder",
                                "separator": None,
                                "class": ""},
                     "submenu": None})
         return menu
 
 
-class MakeProprioFolderMenuItem(BrowserSubMenuItem):
-    implements(IMakeProprioFolderMenuItem)
+class ConfigureProprioFolderMenuItem(BrowserSubMenuItem):
+    implements(IConfigureProprioFolderMenuItem)
 
     title = ""
     description = ""
@@ -62,7 +62,7 @@ class MakeProprioFolderMenuItem(BrowserSubMenuItem):
 
     def available(self):
         # only available in Proprio folders
-        return (self.context.portal_type == 'Proprio')
+        return (self.context.portal_type == 'ProprioFolder')
 
     def disabled(self):
         return False

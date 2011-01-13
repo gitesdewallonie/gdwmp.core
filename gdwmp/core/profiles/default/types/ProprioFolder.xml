@@ -2,14 +2,14 @@
 <object name="Folder"
    meta_type="Factory-based Type Information with dynamic views"
    i18n:domain="plone" xmlns:i18n="http://xml.zope.org/namespaces/i18n">
- <property name="title" i18n:domain="gdwmp.core" i18n:translate="">Proprio Folder</property>
+ <property name="title" i18n:domain="gdwmp.core" i18n:translate="">Dossier Proprio</property>
  <property name="description"
      i18n:translate=""></property>
- <property name="icon_expr"></property>
+ <property name="icon_expr">string:${portal_url}/propriofolder_icon.png</property>
  <property name="content_meta_type">ATFolder</property>
  <property name="product">ATContentTypes</property>
  <property name="factory">addATFolder</property>
- <property name="immediate_view">proprio_view</property>
+ <property name="immediate_view">proprio_folder_view</property>
  <property name="global_allow">True</property>
  <property name="filter_content_types">True</property>
  <property name="allowed_content_types">
@@ -18,9 +18,9 @@
     <element value="Image"/>
  </property>
  <property name="allow_discussion">False</property>
- <property name="default_view">proprio_view</property>
+ <property name="default_view">proprio_folder_view</property>
  <property name="view_methods">
-  <element value="proprio_view"/>
+  <element value="proprio_folder_view"/>
  </property>
  <alias from="(Default)" to="(dynamic view)"/>
  <alias from="edit" to="atct_edit"/>

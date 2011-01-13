@@ -6,7 +6,7 @@
   <default>
    <bound-workflow workflow_id="simple_publication_workflow"/>
   </default>
-  <type type_id="Proprio">
+  <type type_id="ProprioFolder">
     <bound-workflow workflow_id="one_state_workflow"/>
   </type>
   <type type_id="Recette">

@@ -8,9 +8,6 @@
 
 <body>
 
-<!-- XXX Prendre tous les documents de type 'Hebergement' et les afficher.
-Si un seul, l'afficher avec options autour. -->
-
     <metal:content-core fill-slot="content-core">
 
         <metal:block use-macro="context/folder_listing/macros/content-core">
