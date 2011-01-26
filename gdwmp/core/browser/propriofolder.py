@@ -6,8 +6,11 @@ from zope.interface import alsoProvides
 
 from Products.Five import BrowserView
 from Products.CMFCore.utils import getToolByName
+from collective.plonetruegallery.interfaces import ISlideShowDisplaySettings
+from collective.plonetruegallery.settings import GallerySettings
 
-from gdwmp.core.browser.interfaces import IProprioFolder
+from gdwmp.core.browser.interfaces import IProprioFolder, IGalleryFolder, \
+                                          IEventFolder
 from gdwmp.core.setuphandlers import createFolder, changeFolderView, \
                                      createTranslationForObject, publishObject
 
@@ -60,6 +63,10 @@ class ProprioFolder(BrowserView):
         changeFolderView(translatedFolder, 'galleryview')
         restrictFolderTypes(galleryFolder, ['Image'])
         restrictFolderTypes(translatedFolder, ['Image'])
+        alsoProvides(galleryFolder, IGalleryFolder)
+        alsoProvides(translatedFolder, IGalleryFolder)
+        configureSlideshow(galleryFolder)
+        configureSlideshow(translatedFolder)
         galleryFolder.reindexObject()
         translatedFolder.reindexObject()
 
@@ -73,6 +80,8 @@ class ProprioFolder(BrowserView):
         restrictFolderTypes(translatedFolder, ['Event'])
         changeFolderView(eventsFolder, 'event_folder_view')
         changeFolderView(translatedFolder, 'event_folder_view')
+        alsoProvides(eventsFolder, IEventFolder)
+        alsoProvides(translatedFolder, IEventFolder)
         eventsFolder.reindexObject()
         translatedFolder.reindexObject()
 
@@ -100,6 +109,11 @@ def restrictFolderTypes(folder, types):
     folder.setConstrainTypesMode(1)
     folder.setLocallyAllowedTypes(types)
     folder.setImmediatelyAddableTypes(types)
+
+
+def configureSlideshow(context):
+    settings = GallerySettings(context, interfaces=[ISlideShowDisplaySettings])
+    settings.show_slideshow_infopane = False
 
 
 def findProprioFolder(context):

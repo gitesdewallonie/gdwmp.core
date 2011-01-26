@@ -8,6 +8,16 @@ class IProprioFolder(Interface):
     """
 
 
+class IGalleryFolder(Interface):
+    """Interface for gallery folders
+    """
+
+
+class IEventFolder(Interface):
+    """Interface for events folders
+    """
+
+
 class IConfigureProprioFolderMenuItem(IBrowserSubMenuItem):
     """The menu item for setting a proprio folder
     """

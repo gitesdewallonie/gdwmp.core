@@ -25,6 +25,7 @@ def install(context):
     setupLanguages(portal)
     clearPortlets(portal)
     setupNavigationPortlet(portal)
+    setupNavigation(portal)
     addRoles(portal)
     activatePloneLDAPPlugin(portal)
     addMemberProperty(portal)
@@ -46,6 +47,13 @@ def setupLanguages(portal):
 def clearPortlets(folder):
     clearColumnPortlets(folder, 'left')
     clearColumnPortlets(folder, 'right')
+
+
+def setupNavigation(portal):
+    pp = getToolByName(portal, 'portal_properties')
+    navProps = pp['navtree_properties']
+    if not 'Image' in navProps.metaTypesNotToList:
+        navProps.metaTypesNotToList = navProps.metaTypesNotToList + ('Image', )
 
 
 def setupNavigationPortlet(folder):
