@@ -14,4 +14,28 @@
   <adapter factory="gdwmp.core.content.event.EventExtender" />
   <adapter factory="gdwmp.core.content.event.EventRemover" />
 
+  <subscriber
+    for="Products.ATContentTypes.interfaces.IATImage
+         Products.Archetypes.interfaces.IObjectInitializedEvent"
+    handler=".handlers.photoAddedHandler"
+    />
+
+  <subscriber
+    for="Products.ATContentTypes.interfaces.IATImage
+         zope.app.container.interfaces.IObjectRemovedEvent"
+    handler=".handlers.photoDeletedHandler"
+    />
+
+  <subscriber
+    for="Products.ATContentTypes.interfaces.IATEvent
+         Products.Archetypes.interfaces.IObjectInitializedEvent"
+    handler=".handlers.eventAddedHandler"
+    />
+
+  <subscriber
+    for="Products.ATContentTypes.interfaces.IATEvent
+         Products.Archetypes.interfaces.IObjectEditedEvent"
+    handler=".handlers.eventModifiedHandler"
+    />
+
 </configure>

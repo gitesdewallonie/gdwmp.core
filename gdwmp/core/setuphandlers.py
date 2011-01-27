@@ -26,6 +26,7 @@ def install(context):
     clearPortlets(portal)
     setupNavigationPortlet(portal)
     setupNavigation(portal)
+    setupLinkIntegrityCheck(portal)
     addRoles(portal)
     activatePloneLDAPPlugin(portal)
     addMemberProperty(portal)
@@ -47,6 +48,12 @@ def setupLanguages(portal):
 def clearPortlets(folder):
     clearColumnPortlets(folder, 'left')
     clearColumnPortlets(folder, 'right')
+
+
+def setupLinkIntegrityCheck(portal):
+    pp = getToolByName(portal, 'portal_properties')
+    siteProps = pp['navtree_properties']
+    siteProps.enable_link_integrity_checks = False
 
 
 def setupNavigation(portal):

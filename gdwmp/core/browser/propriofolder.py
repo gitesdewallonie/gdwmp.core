@@ -64,7 +64,6 @@ class ProprioFolder(BrowserView):
         restrictFolderTypes(galleryFolder, ['Image'])
         restrictFolderTypes(translatedFolder, ['Image'])
         alsoProvides(galleryFolder, IGalleryFolder)
-        alsoProvides(translatedFolder, IGalleryFolder)
         configureSlideshow(galleryFolder)
         configureSlideshow(translatedFolder)
         galleryFolder.reindexObject()
@@ -81,7 +80,6 @@ class ProprioFolder(BrowserView):
         changeFolderView(eventsFolder, 'event_folder_view')
         changeFolderView(translatedFolder, 'event_folder_view')
         alsoProvides(eventsFolder, IEventFolder)
-        alsoProvides(translatedFolder, IEventFolder)
         eventsFolder.reindexObject()
         translatedFolder.reindexObject()
 
