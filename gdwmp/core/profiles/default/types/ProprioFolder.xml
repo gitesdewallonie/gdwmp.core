@@ -5,7 +5,7 @@
  <property name="title" i18n:domain="gdwmp.core" i18n:translate="">Dossier Proprio</property>
  <property name="description"
      i18n:translate=""></property>
- <property name="icon_expr">string:${portal_url}/propriofolder_icon.png</property>
+ <property name="icon_expr">string:${portal_url}/++resource++propriofolder_icon.png</property>
  <property name="content_meta_type">ATFolder</property>
  <property name="product">ATContentTypes</property>
  <property name="factory">addATFolder</property>

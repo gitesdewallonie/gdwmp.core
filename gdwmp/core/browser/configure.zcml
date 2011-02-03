@@ -49,4 +49,19 @@
         template="templates/recette_view.pt"
         />
 
+    <browser:resource
+        file="resources/hebergement_icon.png"
+        name="hebergement_icon.png"
+        />
+
+    <browser:resource
+        file="resources/propriofolder_icon.png"
+        name="propriofolder_icon.png"
+        />
+
+    <browser:resource
+        file="resources/recette_icon.png"
+        name="recette_icon.png"
+        />
+
 </configure>
