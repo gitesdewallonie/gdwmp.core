@@ -3,11 +3,21 @@
     xmlns:five="http://namespaces.zope.org/five"
     xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:cmf="http://namespaces.zope.org/cmf"
+    xmlns:monkey="http://namespaces.plone.org/monkey"
     i18n_domain="gdwmp.core">
 
   <five:registerPackage package="." initialize=".initialize" />
   <include package=".browser" />
   <include file="profiles.zcml" />
+
+  <include package="collective.monkeypatcher" />
+  <monkey:patch
+        description="Handle 'section-' body class when used with LinguaPlone"
+        class="plone.app.layout.globals.layout.LayoutPolicy"
+        original="bodyClass"
+        replacement=".monkey.bodyClass"
+        preservedoc="True"
+        />
 
   <include package="archetypes.schemaextender" />
   <adapter factory="gdwmp.core.content.event.EventExtender" />
