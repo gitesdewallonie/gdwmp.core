@@ -42,7 +42,7 @@ def setupLanguages(portal):
     lang = getToolByName(portal, 'portal_languages')
     lang.supported_langs = LANGUAGES
     lang.setDefaultLanguage('fr')
-    lang.display_flags = 1
+    lang.display_flags = 0
 
 
 def clearPortlets(folder):
@@ -72,7 +72,7 @@ def setupNavigationPortlet(folder):
                                        currentFolderOnly=False,
                                        includeTop=False,
                                        topLevel=0,
-                                       bottomLevel=0)
+                                       bottomLevel=1)
     assignments['navtree'] = assignment
 
 
