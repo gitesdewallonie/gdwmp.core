@@ -35,6 +35,14 @@
 
     <browser:page
         for="*"
+        name="hebergement_view"
+        class=".propriofolder.ProprioFolder"
+        permission="zope2.View"
+        template="templates/hebergement_view.pt"
+        />
+
+    <browser:page
+        for="*"
         name="event_folder_view"
         class=".eventfolder.EventFolder"
         permission="zope2.View"
