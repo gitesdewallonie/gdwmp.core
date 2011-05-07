@@ -19,6 +19,14 @@
 
     <browser:page
         for="*"
+        name="getTranslatedObjectUrl"
+        attribute="getTranslatedObjectUrl"
+        class=".translations.Translate"
+        permission="zope.Public"
+        />
+
+    <browser:page
+        for="*"
         name="configureProprioFolder"
         class=".propriofolder.ProprioFolder"
         attribute="changeStatus"

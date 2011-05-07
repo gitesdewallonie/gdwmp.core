@@ -12,21 +12,24 @@
         <metal:field use-macro="python:context.widget('text', mode='view')">
             Body text
         </metal:field>
-        <div id="hebergement-recettes">
-            <a href="" tal:attributes="href string:${portal_url}/recettes"
-               i18n_domain="gdwmp.core" i18n:translate="evenements_recettes">
-                Les recettes de cet hébergement
-            </a>            
-        </div>
-        <div id="hebergement-evenements">
-            <a href="" tal:attributes="href string:${portal_url}/evenements"
-               i18n_domain="gdwmp.core" i18n:translate="evenements_hebergement">
-                Les événemenets de cet hébergement
-            </a>            
-        </div>
+        <span tal:define="translate nocall:context/getTranslatedObjectUrl">
+            <div id="hebergement-recettes">
+                <a href=""
+                   tal:attributes="href python:translate('recettes')"
+                   i18n_domain="gdwmp.core" i18n:translate="evenements_recettes">
+                    Les recettes de cet hébergement
+                </a>            
+            </div>
+            <div id="hebergement-evenements">
+                <a href=""
+                   tal:attributes="href python:translate('evenements')"
+                   i18n_domain="gdwmp.core" i18n:translate="evenements_hebergement">
+                    Les événements de cet hébergement
+                </a>            
+            </div>
+        </span>
     </metal:content-core>
 </metal:content-core>
 
 </body>
 </html>
-
