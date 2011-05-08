@@ -1,0 +1,58 @@
+# Translation
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1 build 10\n"
+"POT-Creation-Date: 2011-05-08 14:16+0000\n"
+"Last-Translator: Affinitic <info@affinitic.be>\n"
+"Language-Team: <info@affinitic.be>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Code: nl\n"
+"Language-Name: Nederlands\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: gdwmp.core\n"
+"X-Is-Fallback-For: nl-be nl-nl\n"
+
+#: profiles/default/types/ProprioFolder.xml
+msgid "Dossier Proprio"
+msgstr ""
+
+#: profiles/default/types/Hebergement.xml
+msgid "Hebergement"
+msgstr ""
+
+#: profiles/default/types/Recette.xml
+msgid "Recette"
+msgstr ""
+
+#. Default: "Complet"
+#: content/event.py:38
+msgid "complete_event"
+msgstr ""
+
+#. Default: "Les événements de cet hébergement"
+#: browser/templates/hebergement_view.pt:24
+msgid "evenements_hebergement"
+msgstr ""
+
+#. Default: "Les recettes de cet hébergement"
+#: browser/templates/hebergement_view.pt:17
+msgid "evenements_recettes"
+msgstr ""
+
+#. Default: "Cochez la case si l'événement est complet."
+#: content/event.py:36
+msgid "help_complete_event"
+msgstr ""
+
+#. Default: "Détail du prix de l'événement."
+#: content/event.py:44
+msgid "help_price"
+msgstr ""
+
+#. Default: "Tarifs"
+#: content/event.py:46
+msgid "price"
+msgstr ""
