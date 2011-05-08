@@ -23,9 +23,10 @@ def install(context):
     deleteFolder(portal, 'events')
     deleteFolder(portal, 'Members')
     setupLanguages(portal)
-    clearPortlets(portal)
-    setupNavigationPortlet(portal)
-    setupNavigation(portal)
+    # Don't touch portlets anymore since manual changes have been made TTW
+    # clearPortlets(portal)
+    # setupNavigationPortlet(portal)
+    # setupNavigation(portal)
     setupLinkIntegrityCheck(portal)
     addRoles(portal)
     activatePloneLDAPPlugin(portal)
