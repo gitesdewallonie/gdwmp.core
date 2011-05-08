@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1 build 10\n"
-"POT-Creation-Date: 2011-05-08 14:16+0000\n"
+"POT-Creation-Date: 2011-05-08 21:30+0000\n"
 "Last-Translator: Affinitic <info@affinitic.be>\n"
 "Language-Team: <info@affinitic.be>\n"
 "Language: \n"
@@ -13,7 +13,7 @@ msgstr ""
 "Language-Name: French\n"
 "Preferred-Encodings: latin1 utf-8\n"
 "X-Is-Fallback-For: fr-be fr-ca fr-lu fr-mc fr-ch fr-fr\n"
-"Domain: gdwmp.core\n"
+"Domain: gdwmp\n"
 
 #: profiles/default/types/ProprioFolder.xml
 msgid "Dossier Proprio"
@@ -23,8 +23,16 @@ msgstr ""
 msgid "Hebergement"
 msgstr ""
 
+#: ../../../gdwmp.skin/gdwmp/skin/skins/gdwmp_skin_scripts/login_next.cpy:22
+msgid "Login failed"
+msgstr ""
+
 #: profiles/default/types/Recette.xml
 msgid "Recette"
+msgstr ""
+
+#: ../../../gdwmp.skin/gdwmp/skin/skins/gdwmp_skin_scripts/login_next.cpy:57
+msgid "Welcome! You are now logged in."
 msgstr ""
 
 #. Default: "Complet"
