@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1 build 10\n"
-"POT-Creation-Date: 2011-05-08 21:30+0000\n"
+"POT-Creation-Date: 2011-05-08 22:02+0000\n"
 "Last-Translator: Affinitic <info@affinitic.be>\n"
 "Language-Team: <info@affinitic.be>\n"
 "Language: \n"
@@ -40,6 +40,11 @@ msgstr ""
 msgid "complete_event"
 msgstr ""
 
+#. Default: "Effectuer une recherche"
+#: ../../../gdwmp.skin/gdwmp/skin/skins/gdwmp_skin_templates/plone.app.layout.viewlets.footer.pt:7
+msgid "effectuer_recherche"
+msgstr ""
+
 #. Default: "Les événements de cet hébergement"
 #: browser/templates/hebergement_view.pt:24
 msgid "evenements_hebergement"
@@ -58,6 +63,16 @@ msgstr ""
 #. Default: "Détail du prix de l'événement."
 #: content/event.py:44
 msgid "help_price"
+msgstr ""
+
+#. Default: "Nos liens"
+#: ../../../gdwmp.skin/gdwmp/skin/skins/gdwmp_skin_templates/plone.app.layout.viewlets.footer.pt:10
+msgid "nos_liens"
+msgstr ""
+
+#. Default: "Plan du site"
+#: ../../../gdwmp.skin/gdwmp/skin/skins/gdwmp_skin_templates/plone.app.layout.viewlets.footer.pt:4
+msgid "plan_du_site"
 msgstr ""
 
 #. Default: "Tarifs"
