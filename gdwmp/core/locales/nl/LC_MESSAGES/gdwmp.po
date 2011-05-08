@@ -25,7 +25,7 @@ msgstr ""
 
 #: ../../../gdwmp.skin/gdwmp/skin/skins/gdwmp_skin_scripts/login_next.cpy:22
 msgid "Login failed"
-msgstr ""
+msgstr "A traduire"
 
 #: profiles/default/types/Recette.xml
 msgid "Recette"
@@ -33,49 +33,49 @@ msgstr ""
 
 #: ../../../gdwmp.skin/gdwmp/skin/skins/gdwmp_skin_scripts/login_next.cpy:57
 msgid "Welcome! You are now logged in."
-msgstr ""
+msgstr "A traduire"
 
 #. Default: "Complet"
 #: content/event.py:38
 msgid "complete_event"
-msgstr ""
+msgstr "A traduire"
 
 #. Default: "Effectuer une recherche"
 #: ../../../gdwmp.skin/gdwmp/skin/skins/gdwmp_skin_templates/plone.app.layout.viewlets.footer.pt:7
 msgid "effectuer_recherche"
-msgstr ""
+msgstr "A traduire"
 
 #. Default: "Les événements de cet hébergement"
 #: browser/templates/hebergement_view.pt:24
 msgid "evenements_hebergement"
-msgstr ""
+msgstr "A traduire"
 
 #. Default: "Les recettes de cet hébergement"
 #: browser/templates/hebergement_view.pt:17
 msgid "evenements_recettes"
-msgstr ""
+msgstr "A traduire"
 
 #. Default: "Cochez la case si l'événement est complet."
 #: content/event.py:36
 msgid "help_complete_event"
-msgstr ""
+msgstr "A traduire"
 
 #. Default: "Détail du prix de l'événement."
 #: content/event.py:44
 msgid "help_price"
-msgstr ""
+msgstr "A traduire"
 
 #. Default: "Nos liens"
 #: ../../../gdwmp.skin/gdwmp/skin/skins/gdwmp_skin_templates/plone.app.layout.viewlets.footer.pt:10
 msgid "nos_liens"
-msgstr ""
+msgstr "A traduire"
 
 #. Default: "Plan du site"
 #: ../../../gdwmp.skin/gdwmp/skin/skins/gdwmp_skin_templates/plone.app.layout.viewlets.footer.pt:4
 msgid "plan_du_site"
-msgstr ""
+msgstr "A traduire"
 
 #. Default: "Tarifs"
 #: content/event.py:46
 msgid "price"
-msgstr ""
+msgstr "A traduire"
