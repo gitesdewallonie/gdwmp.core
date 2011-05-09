@@ -5,6 +5,19 @@ from zope.component import getMultiAdapter
 from Products.Five.browser import BrowserView
 
 
+def translateId(strId, lang):
+    if lang == 'fr':
+        return strId
+
+    elif lang == 'nl':
+        if strId == 'recettes':
+            return 'recepten'
+        if strId == 'evenements':
+            return 'evenementen'
+        if strId == 'ateliers':
+            return 'atelieren'
+
+
 class Translate(BrowserView):
     """
     Translate object
@@ -17,15 +30,7 @@ class Translate(BrowserView):
         context = aq_inner(self.context)
         portal_state = getMultiAdapter((context, self.request), name=u'plone_portal_state')
         lang = portal_state.language()
-
-        if lang == 'fr':
-            return path
-
-        elif lang == 'nl':
-            if path == 'recettes':
-                return 'recepten'
-            if path == 'evenements':
-                return 'evenementen'
+        return translateId(path, lang)
 
         # obj = self.context.restrictedTraverse(path)
         # translatedObject = obj.getTranslation()

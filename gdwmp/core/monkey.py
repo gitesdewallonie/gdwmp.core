@@ -1,7 +1,10 @@
-from zope.component import queryUtility
+from Acquisition import aq_inner
+from zope.component import queryUtility, getMultiAdapter
 from plone.i18n.normalizer.interfaces import IIDNormalizer
 from Products.CMFCore.utils import getToolByName
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
+
+from gdwmp.core.browser.translations import translateId
 
 
 def bodyClass(self, template, view):
@@ -37,3 +40,10 @@ def bodyClass(self, template, view):
         body_class += ' icons-on'
 
     return body_class
+
+
+def all_events_link(self):
+    context = aq_inner(self.context)
+    portal_state = getMultiAdapter((context, self.request), name=u'plone_portal_state')
+    lang = portal_state.language()
+    return translateId('ateliers', lang)

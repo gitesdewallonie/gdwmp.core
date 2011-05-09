@@ -20,6 +20,13 @@
         replacement=".monkey.bodyClass"
         preservedoc="True"
         />
+  <monkey:patch
+        description="Quickfix change 'all envents' portlet link URL"
+        class="plone.app.portlets.portlets.events.Renderer"
+        original="all_events_link"
+        replacement=".monkey.all_events_link"
+        preservedoc="True"
+        />
 
   <include package="archetypes.schemaextender" />
   <adapter factory="gdwmp.core.content.event.EventExtender" />
