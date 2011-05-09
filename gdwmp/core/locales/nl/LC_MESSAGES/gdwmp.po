@@ -21,24 +21,24 @@ msgstr ""
 
 #: profiles/default/types/Hebergement.xml
 msgid "Hebergement"
-msgstr ""
+msgstr "Kamer"
 
 #: ../../../gdwmp.skin/gdwmp/skin/skins/gdwmp_skin_scripts/login_next.cpy:22
 msgid "Login failed"
-msgstr "A traduire"
+msgstr ""
 
 #: profiles/default/types/Recette.xml
 msgid "Recette"
-msgstr ""
+msgstr "Recept"
 
 #: ../../../gdwmp.skin/gdwmp/skin/skins/gdwmp_skin_scripts/login_next.cpy:57
 msgid "Welcome! You are now logged in."
-msgstr "A traduire"
+msgstr ""
 
 #. Default: "Complet"
 #: content/event.py:38
 msgid "complete_event"
-msgstr "A traduire"
+msgstr ""
 
 #. Default: "Effectuer une recherche"
 #: ../../../gdwmp.skin/gdwmp/skin/skins/gdwmp_skin_templates/plone.app.layout.viewlets.footer.pt:11
