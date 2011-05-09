@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1 build 10\n"
-"POT-Creation-Date: 2011-05-08 22:02+0000\n"
+"POT-Creation-Date: 2011-05-09 08:11+0000\n"
 "Last-Translator: Affinitic <info@affinitic.be>\n"
 "Language-Team: <info@affinitic.be>\n"
 "Language: \n"
@@ -41,7 +41,7 @@ msgid "complete_event"
 msgstr ""
 
 #. Default: "Effectuer une recherche"
-#: ../../../gdwmp.skin/gdwmp/skin/skins/gdwmp_skin_templates/plone.app.layout.viewlets.footer.pt:7
+#: ../../../gdwmp.skin/gdwmp/skin/skins/gdwmp_skin_templates/plone.app.layout.viewlets.footer.pt:11
 msgid "effectuer_recherche"
 msgstr ""
 
@@ -66,16 +66,21 @@ msgid "help_price"
 msgstr ""
 
 #. Default: "Nos liens"
-#: ../../../gdwmp.skin/gdwmp/skin/skins/gdwmp_skin_templates/plone.app.layout.viewlets.footer.pt:10
+#: ../../../gdwmp.skin/gdwmp/skin/skins/gdwmp_skin_templates/plone.app.layout.viewlets.footer.pt:14
 msgid "nos_liens"
 msgstr ""
 
 #. Default: "Plan du site"
-#: ../../../gdwmp.skin/gdwmp/skin/skins/gdwmp_skin_templates/plone.app.layout.viewlets.footer.pt:4
+#: ../../../gdwmp.skin/gdwmp/skin/skins/gdwmp_skin_templates/plone.app.layout.viewlets.footer.pt:8
 msgid "plan_du_site"
 msgstr ""
 
 #. Default: "Tarifs"
 #: content/event.py:46
 msgid "price"
+msgstr ""
+
+#. Default: "Ateliers culinaires en chambres d'hôtes"
+#: ../../../gdwmp.skin/gdwmp/skin/skins/gdwmp_skin_templates/plone.app.layout.viewlets.footer.pt:3
+msgid "titre_banner"
 msgstr ""
