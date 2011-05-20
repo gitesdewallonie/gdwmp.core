@@ -14,6 +14,8 @@ def translateId(strId, lang):
             return 'recepten'
         if strId == 'evenements':
             return 'evenementen'
+        if strId == 'photos':
+            return 'fotos'
         if strId == 'ateliers':
             return 'atelieren'
 

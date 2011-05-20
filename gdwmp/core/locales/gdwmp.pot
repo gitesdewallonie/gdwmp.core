@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-05-09 08:11+0000\n"
+"POT-Creation-Date: 2011-05-20 12:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -70,6 +70,11 @@ msgstr ""
 #. Default: "Nos liens"
 #: ../../../gdwmp.skin/gdwmp/skin/skins/gdwmp_skin_templates/plone.app.layout.viewlets.footer.pt:14
 msgid "nos_liens"
+msgstr ""
+
+#. Default: "Les photos de cet hébergement"
+#: ./browser/templates/hebergement_view.pt:31
+msgid "photos_hebergement"
 msgstr ""
 
 #. Default: "Plan du site"

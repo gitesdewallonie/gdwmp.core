@@ -27,6 +27,13 @@
                     Les événements de cet hébergement
                 </a>            
             </div>
+            <div id="hebergement-photos">
+                <a href=""
+                   tal:attributes="href python:translate('photos')"
+                   i18n:domain="gdwmp" i18n:translate="photos_hebergement">
+                    Les photos de cet hébergement
+                </a>            
+            </div>
         </span>
     </metal:content-core>
 </metal:content-core>
