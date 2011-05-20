@@ -45,15 +45,15 @@ msgstr "Volzet"
 msgid "effectuer_recherche"
 msgstr "Een opzoeking verrichten"
 
-#. Default: "Les événements de cet hébergement"
+#. Default: "Nos événements"
 #: browser/templates/hebergement_view.pt:24
 msgid "evenements_hebergement"
-msgstr "De activiteiten van dit logies"
+msgstr "Onze activiteiten"
 
-#. Default: "Les recettes de cet hébergement"
+#. Default: "Nos recettes"
 #: browser/templates/hebergement_view.pt:17
 msgid "evenements_recettes"
-msgstr "De recepten van dit logies"
+msgstr "Onze recepten"
 
 #. Default: "Cochez la case si l'événement est complet."
 #: content/event.py:36
@@ -70,10 +70,10 @@ msgstr "Detail van de prijs van de activiteit."
 msgid "nos_liens"
 msgstr "Onze links"
 
-#. Default: "Les photos de cet hébergement"
+#. Default: "Nos photos"
 #: browser/templates/hebergement_view.pt:31
 msgid "photos_hebergement"
-msgstr "De foto’s van dit logies"
+msgstr "Onze foto’s"
 
 #. Default: "Plan du site"
 #: ../../../gdwmp.skin/gdwmp/skin/skins/gdwmp_skin_templates/plone.app.layout.viewlets.footer.pt:8

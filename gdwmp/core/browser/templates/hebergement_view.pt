@@ -14,21 +14,21 @@
                 <a href=""
                    tal:attributes="href python:translate('recettes')"
                    i18n:domain="gdwmp" i18n:translate="evenements_recettes">
-                    Les recettes de cet hébergement
+                    Nos recettes
                 </a>            
             </div>
             <div id="hebergement-evenements">
                 <a href=""
                    tal:attributes="href python:translate('evenements')"
                    i18n:domain="gdwmp" i18n:translate="evenements_hebergement">
-                    Les événements de cet hébergement
+                    Nos événements
                 </a>            
             </div>
             <div id="hebergement-photos">
                 <a href=""
                    tal:attributes="href python:translate('photos')"
                    i18n:domain="gdwmp" i18n:translate="photos_hebergement">
-                    Les photos de cet hébergement
+                    Nos photos
                 </a>            
             </div>
             <div class="visualClear">

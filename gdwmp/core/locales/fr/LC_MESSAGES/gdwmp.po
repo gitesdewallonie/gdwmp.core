@@ -45,12 +45,12 @@ msgstr ""
 msgid "effectuer_recherche"
 msgstr ""
 
-#. Default: "Les événements de cet hébergement"
+#. Default: "Nos événements"
 #: browser/templates/hebergement_view.pt:24
 msgid "evenements_hebergement"
 msgstr ""
 
-#. Default: "Les recettes de cet hébergement"
+#. Default: "Nos recettes"
 #: browser/templates/hebergement_view.pt:17
 msgid "evenements_recettes"
 msgstr ""
@@ -70,7 +70,7 @@ msgstr ""
 msgid "nos_liens"
 msgstr ""
 
-#. Default: "Les photos de cet hébergement"
+#. Default: "Nos photos"
 #: browser/templates/hebergement_view.pt:31
 msgid "photos_hebergement"
 msgstr ""
