@@ -10,29 +10,30 @@
 <metal:content-core fill-slot="content-core">
     <metal:content-core define-macro="content-core">
         <div id="liens-hebergement" tal:define="translate nocall:context/getTranslatedObjectUrl">
-            <div id="hebergement-recettes">
-                <a href=""
-                   tal:attributes="href python:translate('recettes')"
-                   i18n:domain="gdwmp" i18n:translate="evenements_recettes">
-                    Nos recettes
-                </a>            
-            </div>
-            <div id="hebergement-evenements">
-                <a href=""
-                   tal:attributes="href python:translate('evenements')"
-                   i18n:domain="gdwmp" i18n:translate="evenements_hebergement">
-                    Nos événements
-                </a>            
-            </div>
-            <div id="hebergement-photos">
-                <a href=""
-                   tal:attributes="href python:translate('photos')"
-                   i18n:domain="gdwmp" i18n:translate="photos_hebergement">
-                    Nos photos
-                </a>            
-            </div>
-            <div class="visualClear">
-            </div>
+            <ul>
+                <li id="hebergement-recettes">
+                    <a href=""
+                       tal:attributes="href python:translate('recettes')"
+                       i18n:domain="gdwmp" i18n:translate="evenements_recettes">
+                        Nos recettes
+                    </a>            
+                </li>
+                <li id="hebergement-evenements">
+                    <a href=""
+                       tal:attributes="href python:translate('evenements')"
+                       i18n:domain="gdwmp" i18n:translate="evenements_hebergement">
+                        Nos événements
+                    </a>            
+                </li>
+                <li id="hebergement-photos">
+                    <a href=""
+                       tal:attributes="href python:translate('photos')"
+                       i18n:domain="gdwmp" i18n:translate="photos_hebergement">
+                        Nos photos
+                    </a>            
+                </li>
+            </ul>
+            <div class="visualClear"></div>
         </div>
         <metal:field use-macro="python:context.widget('text', mode='view')">
             Body text
