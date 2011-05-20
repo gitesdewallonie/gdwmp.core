@@ -34,6 +34,8 @@
                     Les photos de cet hébergement
                 </a>            
             </div>
+            <div class="visualClear">
+            </div>
         </div>
     </metal:content-core>
 </metal:content-core>
