@@ -38,54 +38,54 @@ msgstr ""
 #. Default: "Complet"
 #: content/event.py:38
 msgid "complete_event"
-msgstr ""
+msgstr "Volzet"
 
 #. Default: "Effectuer une recherche"
 #: ../../../gdwmp.skin/gdwmp/skin/skins/gdwmp_skin_templates/plone.app.layout.viewlets.footer.pt:11
 msgid "effectuer_recherche"
-msgstr "A traduire"
+msgstr "Een opzoeking verrichten"
 
 #. Default: "Les événements de cet hébergement"
 #: browser/templates/hebergement_view.pt:24
 msgid "evenements_hebergement"
-msgstr "A traduire"
+msgstr "De activiteiten van dit logies"
 
 #. Default: "Les recettes de cet hébergement"
 #: browser/templates/hebergement_view.pt:17
 msgid "evenements_recettes"
-msgstr "A traduire"
+msgstr "De recepten van dit logies"
 
 #. Default: "Cochez la case si l'événement est complet."
 #: content/event.py:36
 msgid "help_complete_event"
-msgstr "A traduire"
+msgstr "Stip het vakje aan als de activiteit volzet is."
 
 #. Default: "Détail du prix de l'événement."
 #: content/event.py:44
 msgid "help_price"
-msgstr "A traduire"
+msgstr "Detail van de prijs van de activiteit."
 
 #. Default: "Nos liens"
 #: ../../../gdwmp.skin/gdwmp/skin/skins/gdwmp_skin_templates/plone.app.layout.viewlets.footer.pt:14
 msgid "nos_liens"
-msgstr "A traduire"
+msgstr "Onze links"
 
 #. Default: "Les photos de cet hébergement"
 #: browser/templates/hebergement_view.pt:31
 msgid "photos_hebergement"
-msgstr "A traduire"
+msgstr "De foto’s van dit logies"
 
 #. Default: "Plan du site"
 #: ../../../gdwmp.skin/gdwmp/skin/skins/gdwmp_skin_templates/plone.app.layout.viewlets.footer.pt:8
 msgid "plan_du_site"
-msgstr "A traduire"
+msgstr "Sitemap"
 
 #. Default: "Tarifs"
 #: content/event.py:46
 msgid "price"
-msgstr "A traduire"
+msgstr "Prijzen"
 
 #. Default: "Ateliers culinaires en chambres d'hôtes"
 #: ../../../gdwmp.skin/gdwmp/skin/skins/gdwmp_skin_templates/plone.app.layout.viewlets.footer.pt:3
 msgid "titre_banner"
-msgstr "A traduire"
+msgstr "Culinaire ateliers in gastenkamers"
