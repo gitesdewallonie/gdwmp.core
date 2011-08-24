@@ -17,6 +17,16 @@ from gdwmp.core.setuphandlers import createFolder, changeFolderView, \
 
 class ProprioFolder(BrowserView):
 
+    def isProprio(self):
+        """
+        Returns True if user is proprio
+        """
+        loggedUser = getSecurityManager().getUser()
+        roles = list(loggedUser.getRoles())
+        if 'Proprietaire' in roles:
+            return True
+        return False
+
     def isConfigured(self):
         obj = self.context
         return IProprioFolder.providedBy(obj)

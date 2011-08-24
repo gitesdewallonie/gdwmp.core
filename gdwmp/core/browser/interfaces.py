@@ -7,6 +7,11 @@ class IProprioFolder(Interface):
     """Interface for proprio folders
     """
 
+    def isProprio():
+        """
+        Returns True if user is proprio
+        """
+
 
 class IGalleryFolder(Interface):
     """Interface for gallery folders

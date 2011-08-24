@@ -43,6 +43,14 @@
 
     <browser:page
         for="*"
+        name="proprio_view"
+        class=".propriofolder.ProprioFolder"
+        permission="zope2.View"
+        allowed_interface=".interfaces.IProprioFolder"
+        />
+
+    <browser:page
+        for="*"
         name="hebergement_view"
         class=".propriofolder.ProprioFolder"
         permission="zope2.View"
