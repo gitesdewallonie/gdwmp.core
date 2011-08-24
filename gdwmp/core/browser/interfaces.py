@@ -12,6 +12,11 @@ class IProprioFolder(Interface):
         Returns True if user is proprio
         """
 
+    def getEventRelatedHebergement():
+        """
+        Returns the heb related to an event
+        """
+
 
 class IGalleryFolder(Interface):
     """Interface for gallery folders

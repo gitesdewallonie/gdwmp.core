@@ -1,5 +1,6 @@
 # -*- coding: UTF-8 -*-
 
+from Acquisition import aq_parent
 from AccessControl import getSecurityManager
 
 from zope.interface import alsoProvides
@@ -26,6 +27,16 @@ class ProprioFolder(BrowserView):
         if 'Proprietaire' in roles:
             return True
         return False
+
+    def getEventRelatedHebergement(self):
+        """
+        Returns the heb related to an event
+        """
+        hebFolder = aq_parent(aq_parent(self.context))
+        if not IProprioFolder.providedBy(hebFolder):
+            return None
+        else:
+            return hebFolder 
 
     def isConfigured(self):
         obj = self.context
