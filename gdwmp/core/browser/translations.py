@@ -17,7 +17,7 @@ def translateId(strId, lang):
         if strId == 'photos':
             return 'fotos'
         if strId == 'ateliers':
-            return 'atelieren'
+            return 'ateliers'
 
 
 class Translate(BrowserView):
