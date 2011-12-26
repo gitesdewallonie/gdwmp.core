@@ -21,10 +21,17 @@
         preservedoc="True"
         />
   <monkey:patch
-        description="Quickfix change 'all envents' portlet link URL"
+        description="Quickfix change 'all events' portlet link URL"
         class="plone.app.portlets.portlets.events.Renderer"
         original="all_events_link"
         replacement=".monkey.all_events_link"
+        preservedoc="True"
+        />
+  <monkey:patch
+        description="Fix language independent catalog search"
+        class="plone.app.vocabularies.catalog.SearchableTextSource"
+        original="search"
+        replacement=".monkey.search"
         preservedoc="True"
         />
 
