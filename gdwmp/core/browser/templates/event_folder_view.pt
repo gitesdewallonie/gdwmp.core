@@ -108,11 +108,11 @@
                               from
                                    <abbr class="dtstart"
                                    tal:attributes="title python:item_start"
-                                   tal:content="python:toLocalizedTime(item_start,long_format=1)"
+                                   tal:content="python:toLocalizedTime(item_start,long_format=0)"
                                    i18n:name="start">from date</abbr> to
                              <abbr class="dtend"
                                    tal:attributes="title python:item_end"
-                                   tal:content="python:toLocalizedTime(item_end,long_format=1)"
+                                   tal:content="python:toLocalizedTime(item_end,long_format=0)"
                                    i18n:name="end">to date</abbr>
                         </span>
                          <span tal:condition="python: item_type == 'Event' and item.location"
